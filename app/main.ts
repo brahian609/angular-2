@@ -1,6 +1,6 @@
 import { bootstrap }    from '@angular/platform-browser-dynamic';
 
 import { AppComponent } from './app.component';
-import { TodoInput } from './todo-input';
+import { TodoService } from './todo-service';
 
-bootstrap(AppComponent);
+bootstrap(AppComponent, [TodoService]);
