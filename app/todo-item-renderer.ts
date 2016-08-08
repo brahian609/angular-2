@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
+import { ViewEncapsulation } from '@angular/core';
 
 @Component({
+    encapsulation: ViewEncapsulation.Native,
     selector: 'todo-item-renderer',
     template: `
     <style>
