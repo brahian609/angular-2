@@ -4,7 +4,7 @@ import { Pipe } from '@angular/core';
     name: "started"
 })
 export class StartedPipe{
-    transform(value){
-        return value.filter((item) => item.status === "started");
+    transform(value, status:string){
+        return value.filter((item) => item.status === status);
     }
 }
