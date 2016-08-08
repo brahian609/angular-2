@@ -4,9 +4,13 @@ import { TodoModel } from './todo-model'
 @Injectable()
 export class TodoService {
     todos = [
-        new TodoModel("brahian"),
-        new TodoModel("steveen"),
-        new TodoModel("giraldo")
+        new TodoModel("comer"),
+        new TodoModel("bailar"),
+        new TodoModel("pagar", "completed"),
+        new TodoModel("ejercicio"),
+        new TodoModel("ropa"),
+        new TodoModel("baño", "completed"),
+        new TodoModel("cobrar")
     ];
 
     addTodo(todo:TodoModel){
